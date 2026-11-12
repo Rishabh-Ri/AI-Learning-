@@ -1,0 +1,11 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+sqlalchemy>=2.0
+pymysql>=1.1
+cryptography>=42.0
+python-dotenv>=1.0
+requests>=2.31
+pyjwt>=2.8
+flask>=3.0
+flask-cors>=4.0
+youtube-transcript-api>=0.6.2

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Learning Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .prose-md h1,.prose-md h2,.prose-md h3{font-weight:700;margin:1.1em 0 .4em;color:#e2e8f0}
+    .prose-md h2{font-size:1.25rem}.prose-md h3{font-size:1.05rem}
+    .prose-md p{margin:.6em 0;line-height:1.65}
+    .prose-md ul{list-style:disc;margin:.5em 0 .5em 1.4em}.prose-md ol{list-style:decimal;margin:.5em 0 .5em 1.4em}
+    .prose-md code{background:#24355b;padding:.1em .35em;border-radius:.3em;font-size:.9em}
+    .prose-md pre{background:#090d1c;padding:.8em;border-radius:.6em;overflow:auto;margin:.7em 0}
+    .prose-md pre code{background:transparent;padding:0}
+    .prose-md strong{color:#f1f5f9}
+    .spinner{width:1.1rem;height:1.1rem;border:2px solid #475569;border-top-color:#38bdf8;border-radius:50%;animation:spin .8s linear infinite;display:inline-block}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200 min-h-screen">
+  <header class="border-b border-slate-800 bg-slate-900/70 backdrop-blur sticky top-0 z-20">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#/" class="font-bold text-lg text-sky-400">AI Learning Platform</a>
+      <div id="userbox" class="text-sm"></div>
+    </div>
+  </header>
+  <main id="app" class="max-w-7xl mx-auto px-4 py-6"></main>
+  <div id="toast" class="fixed bottom-4 right-4 z-50"></div>
+  <script src="app.js"></script>
+</body>
+</html>
